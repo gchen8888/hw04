@@ -15,7 +15,7 @@ format:
         warning: true
         error: true
         toc: false
-        date: "09/25/2026"
+        date: "09/30/2026"
         filters:
           - _assets/typst-pdf/processing.lua
 execute:
@@ -61,7 +61,6 @@ If you are enrolled in the course, use the assignment link posted on Ed Discussi
 
 - Problem 1 consists of problems that should be solved by hand: expectations, Monte Carlo error, and return periods.
 - Problem 2 is a short computational Monte Carlo analysis: propagate a flood hazard distribution through a depth-damage function.
-- Problems 1.2 and 2.2 use confidence intervals, which we cover in class on Monday, September 28. Everything else can be started now.
 
 ### Load Environment
 
@@ -98,13 +97,13 @@ A treatment unit removes a fraction $R$ of the incoming load, where $R$ is uncer
 
 #### Problem 1.2 (7 points)
 
-You are estimating a probability by Monte Carlo. With $n = 2{,}000$ samples your estimate is $\hat{p} = 0.08$ and the standard error is $0.006$.
+You are estimating a probability by Monte Carlo. With $n = 2,000$ samples your estimate is $\hat{p} = 0.08$ and the standard error is $0.006$.
 
 1. Write down the 95% confidence interval.
 
-2. You need the standard error to be no larger than $0.002$. How many samples will that take? Show the reasoning, not just the number.
+2. You need the standard error to be no larger than $0.002$. How many samples will that take? 
 
-3. A colleague proposes reducing the error instead by using a finer spatial grid in the underlying simulation. Will that help with *this* source of error? Explain.
+3. A colleague proposes reducing your error instead by using a finer spatial grid in the underlying simulation. Will that help with *this* source of error? Explain.
 
 #### Problem 1.3 (7 points)
 
@@ -132,7 +131,7 @@ Flood risk is usually quantified by propagating a distribution of flood depths t
 
 $$d(h) = \mathbb{1}_{h > 0} \frac{L}{1 + \exp\left(-k(h - h_0)\right)},$$
 
-where $h$ is the flood depth in metres and $d$ is the damage in dollars. We'll use $L = \$200{,}000$, $k = 0.8$, and $h_0 = 3$ in our depth-damage function specification.
+where $h$ is the flood depth in metres and $d$ is the damage in dollars. We'll use $L = \$200,000$, $k = 0.8$, and $h_0 = 3$ in our depth-damage function specification.
 
 Assume the annual maximum flood depth at this structure is distributed as
 
